@@ -1,700 +1,1665 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    body {background-color: #f4f0ea}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #bb8821; -webkit-text-stroke: #bb8821}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.8); -webkit-text-stroke: rgba(255, 255, 255, 0.8)}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.45); -webkit-text-stroke: rgba(255, 255, 255, 0.45)}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.4); -webkit-text-stroke: rgba(255, 255, 255, 0.4)}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #bb8821; -webkit-text-stroke: #bb8821}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 24.0px 'Helvetica Neue'; color: #0c1428; -webkit-text-stroke: #0c1428}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #585e6d; -webkit-text-stroke: #585e6d}
-    p.p9 {margin: 0.0px 0.0px 14.0px 0.0px; font: 15.0px 'Helvetica Neue'; color: #141322; -webkit-text-stroke: #141322}
-    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #bb8821; -webkit-text-stroke: #bb8821}
-    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px 'Helvetica Neue'; color: #0c1428; -webkit-text-stroke: #0c1428}
-    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.5px 'Helvetica Neue'; color: #585e6d; -webkit-text-stroke: #585e6d}
-    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #e1b250; -webkit-text-stroke: #e1b250}
-    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.5px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.65); -webkit-text-stroke: rgba(255, 255, 255, 0.65)}
-    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #0c1428; -webkit-text-stroke: #0c1428}
-    p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #1b963a; -webkit-text-stroke: #1b963a}
-    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #141322; -webkit-text-stroke: #141322}
-    p.p19 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #d10e1d; -webkit-text-stroke: #d10e1d}
-    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.5); -webkit-text-stroke: rgba(255, 255, 255, 0.5)}
-    p.p21 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #0c1428; -webkit-text-stroke: #0c1428}
-    p.p22 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #1b963a; -webkit-text-stroke: #1b963a}
-    p.p23 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #1b963a}
-    p.p24 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.5px 'Helvetica Neue'; color: #0c1428; -webkit-text-stroke: #0c1428}
-    p.p25 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.5px 'Helvetica Neue'; color: #585e6d; -webkit-text-stroke: #585e6d; min-height: 16.0px}
-    p.p26 {margin: 0.0px 0.0px 0.0px 0.0px; font: 28.0px 'Helvetica Neue'; color: #bb8821; -webkit-text-stroke: #bb8821}
-    p.p27 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px 'Helvetica Neue'; color: #0c1428; -webkit-text-stroke: #0c1428}
-    p.p28 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px 'Helvetica Neue'; color: #141322; -webkit-text-stroke: #141322; background-color: #0c1428; min-height: 18.0px}
-    p.p29 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px 'Helvetica Neue'; color: #141322; -webkit-text-stroke: #141322; background-color: #bb8821; min-height: 18.0px}
-    p.p30 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px 'Helvetica Neue'; color: #141322; -webkit-text-stroke: #141322; min-height: 18.0px}
-    p.p31 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 8.0px 'Helvetica Neue'; color: #e1b250; -webkit-text-stroke: #e1b250; background-color: #bb8821; background-color: rgba(187, 136, 33, 0.15)}
-    p.p32 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 8.0px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.6); -webkit-text-stroke: rgba(255, 255, 255, 0.6); background-color: #ffffff; background-color: rgba(255, 255, 255, 0.071)}
-    p.p33 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 8.0px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.4); -webkit-text-stroke: rgba(255, 255, 255, 0.4); background-color: #ffffff; background-color: rgba(255, 255, 255, 0.051)}
-    p.p34 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p35 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #e1b250; -webkit-text-stroke: #e1b250}
-    p.p36 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p37 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #585e6d; -webkit-text-stroke: #585e6d}
-    p.p38 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #0c1428; -webkit-text-stroke: #0c1428}
-    p.p39 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #585e6d; -webkit-text-stroke: #585e6d}
-    p.p40 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.75); -webkit-text-stroke: rgba(255, 255, 255, 0.75)}
-    p.p41 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #0c1428; -webkit-text-stroke: #0c1428}
-    p.p42 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.5px 'Helvetica Neue'; color: #141322; -webkit-text-stroke: #141322}
-    p.p43 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #585e6d; -webkit-text-stroke: #585e6d; min-height: 11.0px}
-    p.p44 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.7); -webkit-text-stroke: rgba(255, 255, 255, 0.7)}
-    p.p45 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #e1b250; -webkit-text-stroke: #e1b250}
-    p.p46 {margin: 0.0px 0.0px 0.0px 0.0px; font: 17.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p47 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p48 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.3); -webkit-text-stroke: rgba(255, 255, 255, 0.3)}
-    span.s1 {font-kerning: none; background-color: #0c1428}
-    span.s2 {font-kerning: none}
-    span.s3 {font-kerning: none; color: #e1b250; background-color: #0c1428; -webkit-text-stroke: 0px #e1b250}
-    span.s4 {font-kerning: none; background-color: #111c37}
-    span.s5 {font-kerning: none; color: #0c1428; -webkit-text-stroke: 0px #0c1428}
-    span.s6 {font-kerning: none; background-color: #ffffff}
-    span.s7 {font-kerning: none; color: #ffffff; background-color: #0c1428; -webkit-text-stroke: 0px #ffffff}
-    span.s8 {font-kerning: none; background-color: rgba(187, 136, 33, 0.12)}
-    span.s9 {font-kerning: none; background-color: rgba(37, 189, 76, 0.059)}
-    span.s10 {font-kerning: none; background-color: rgba(232, 44, 53, 0.051)}
-    span.s11 {font-kerning: none; background-color: rgba(37, 189, 76, 0.078)}
-    span.s12 {font-kerning: none; color: #0c1428; background-color: #ffffff; -webkit-text-stroke: 0px #0c1428}
-    span.s13 {font-kerning: none; color: #18387c; -webkit-text-stroke: 0px #18387c}
-    span.s14 {font-kerning: none; background-color: #141322; text-shadow: 0.0px 1.0px 4.0px rgba(254, 254, 254, 0.0039)}
-    span.s15 {font-kerning: none; background-color: rgba(12, 20, 40, 0.7)}
-    span.s16 {font-kerning: none; background-color: rgba(12, 20, 40, 0.051)}
-    span.s17 {font-kerning: none; background-color: rgba(12, 20, 40, 0.031)}
-    span.s18 {font-kerning: none; color: #ffffff; background-color: #111c37; -webkit-text-stroke: 0px #ffffff}
-    span.s19 {font: 12.0px 'Helvetica Neue'; font-kerning: none; color: #0c1428; background-color: rgba(12, 20, 40, 0.059); -webkit-text-stroke: 0px #0c1428}
-    span.s20 {font-kerning: none; background-color: rgba(12, 20, 40, 0.078)}
-    span.s21 {font-kerning: none; background-color: #e8e4db}
-    span.s22 {font: 13.0px 'Helvetica Neue'; font-kerning: none; color: rgba(255, 255, 255, 0.7); background-color: #0c1428; -webkit-text-stroke: 0px rgba(255, 255, 255, 0.7)}
-    table.t1 {border-collapse: collapse}
-    td.td1 {width: 111.5px; background-color: #0c1428; padding: 12.0px 18.0px 12.0px 18.0px}
-    td.td2 {width: 218.3px; background-color: #0c1428; padding: 12.0px 18.0px 12.0px 18.0px}
-    td.td3 {width: 79.2px; background-color: #0c1428; padding: 12.0px 18.0px 12.0px 18.0px}
-    td.td4 {width: 124.3px; background-color: #0c1428; padding: 12.0px 18.0px 12.0px 18.0px}
-    td.td5 {width: 106.7px; background-color: #0c1428; padding: 12.0px 18.0px 12.0px 18.0px}
-    td.td6 {width: 111.5px; border-style: solid; border-width: 0.0px 0.0px 1.0px 0.0px; border-color: #141322 #141322 #0c1428 #141322; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td7 {width: 218.3px; border-style: solid; border-width: 0.0px 0.0px 1.0px 0.0px; border-color: #141322 #141322 #0c1428 #141322; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td8 {width: 79.2px; border-style: solid; border-width: 0.0px 0.0px 1.0px 0.0px; border-color: #141322 #141322 #0c1428 #141322; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td9 {width: 124.3px; border-style: solid; border-width: 0.0px 0.0px 1.0px 0.0px; border-color: #141322 #141322 #0c1428 #141322; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td10 {width: 106.7px; border-style: solid; border-width: 0.0px 0.0px 1.0px 0.0px; border-color: #141322 #141322 #0c1428 #141322; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td11 {width: 111.5px; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td12 {width: 218.3px; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td13 {width: 79.2px; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td14 {width: 124.3px; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td15 {width: 106.7px; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td16 {width: 131.5px; background-color: #0c1428; padding: 12.0px 18.0px 12.0px 18.0px}
-    td.td17 {width: 140.8px; background-color: #0c1428; padding: 12.0px 18.0px 12.0px 18.0px}
-    td.td18 {width: 157.5px; background-color: #0c1428; padding: 12.0px 18.0px 12.0px 18.0px}
-    td.td19 {width: 100.8px; background-color: #0c1428; padding: 12.0px 18.0px 12.0px 18.0px}
-    td.td20 {width: 109.5px; background-color: #0c1428; padding: 12.0px 18.0px 12.0px 18.0px}
-    td.td21 {width: 131.5px; border-style: solid; border-width: 0.0px 0.0px 1.0px 0.0px; border-color: #141322 #141322 #0c1428 #141322; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td22 {width: 140.8px; border-style: solid; border-width: 0.0px 0.0px 1.0px 0.0px; border-color: #141322 #141322 #0c1428 #141322; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td23 {width: 157.5px; border-style: solid; border-width: 0.0px 0.0px 1.0px 0.0px; border-color: #141322 #141322 #0c1428 #141322; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td24 {width: 100.8px; border-style: solid; border-width: 0.0px 0.0px 1.0px 0.0px; border-color: #141322 #141322 #0c1428 #141322; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td25 {width: 109.5px; border-style: solid; border-width: 0.0px 0.0px 1.0px 0.0px; border-color: #141322 #141322 #0c1428 #141322; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td26 {width: 131.5px; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td27 {width: 140.8px; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td28 {width: 157.5px; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td29 {width: 100.8px; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td30 {width: 109.5px; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td31 {width: 104.7px; background-color: #0c1428; padding: 12.0px 18.0px 12.0px 18.0px}
-    td.td32 {width: 422.4px; background-color: #0c1428; padding: 12.0px 18.0px 12.0px 18.0px}
-    td.td33 {width: 113.0px; background-color: #0c1428; padding: 12.0px 18.0px 12.0px 18.0px}
-    td.td34 {width: 104.7px; border-style: solid; border-width: 0.0px 0.0px 1.0px 0.0px; border-color: #141322 #141322 #0c1428 #141322; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td35 {width: 422.4px; border-style: solid; border-width: 0.0px 0.0px 1.0px 0.0px; border-color: #141322 #141322 #0c1428 #141322; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td36 {width: 113.0px; border-style: solid; border-width: 0.0px 0.0px 1.0px 0.0px; border-color: #141322 #141322 #0c1428 #141322; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td37 {width: 104.7px; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td38 {width: 422.4px; padding: 13.0px 18.0px 13.0px 18.0px}
-    td.td39 {width: 113.0px; padding: 13.0px 18.0px 13.0px 18.0px}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EP Wealth — Advisor Content Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0D1B35;
+    --navy-mid: #152747;
+    --blue: #1E4B8F;
+    --gold: #C8992A;
+    --gold-lt: #E8BE62;
+    --gold-dim: rgba(200,153,42,0.12);
+    --cream: #F6F3EE;
+    --off: #EDE9E2;
+    --white: #FFFFFF;
+    --text: #1A1A2E;
+    --muted: #6B7280;
+    --border: rgba(13,27,53,0.1);
+    --border-gold: rgba(200,153,42,0.25);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--cream);
+    font-family: 'Instrument Sans', sans-serif;
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  /* COVER */
+  .cover {
+    background: var(--navy);
+    min-height: 260px;
+    padding: 60px 72px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .cover::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 90% 20%, rgba(78,130,210,0.12) 0%, transparent 60%),
+      radial-gradient(ellipse 40% 60% at 10% 80%, rgba(200,153,42,0.06) 0%, transparent 50%);
+  }
+
+  .cover-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .cover h1 {
+    font-family: 'Instrument Serif', serif;
+    font-size: clamp(34px, 5vw, 60px);
+    color: var(--white);
+    line-height: 1.05;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .cover h1 em {
+    font-style: italic;
+    color: var(--gold-lt);
+  }
+
+  .cover-meta {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .cover-meta-item {
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+    font-weight: 300;
+  }
+
+  .cover-meta-item strong {
+    color: rgba(255,255,255,0.8);
+    font-weight: 500;
+    display: block;
+    font-size: 13px;
+    margin-bottom: 2px;
+  }
+
+  /* NAV */
+  .nav-bar {
+    background: var(--navy-mid);
+    padding: 0 72px;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .nav-bar::-webkit-scrollbar { display: none; }
+
+  .nav-item {
+    padding: 14px 20px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+  }
+  .nav-item:first-child { padding-left: 0; }
+
+  /* LAYOUT */
+  .page {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 72px 80px;
+  }
+
+  @media (max-width: 768px) {
+    .cover { padding: 40px 28px; }
+    .nav-bar { padding: 0 28px; }
+    .page { padding: 0 28px 60px; }
+  }
+
+  .section { padding-top: 64px; }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    margin-bottom: 36px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .section-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    flex-shrink: 0;
+  }
+
+  .section-title {
+    font-family: 'Instrument Serif', serif;
+    font-size: clamp(20px, 3vw, 30px);
+    font-weight: 400;
+    color: var(--navy);
+    line-height: 1.1;
+  }
+
+  .section-desc {
+    font-size: 14px;
+    color: var(--muted);
+    font-weight: 300;
+    margin-top: 6px;
+    max-width: 560px;
+  }
+
+  p { margin-bottom: 14px; color: var(--text); font-weight: 300; }
+  p:last-child { margin-bottom: 0; }
+  strong { font-weight: 600; color: var(--navy); }
+  em { font-style: italic; color: var(--blue); }
+
+  .card-grid { display: grid; gap: 16px; margin-bottom: 32px; }
+  .card-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+  .card-grid.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+
+  @media (max-width: 768px) {
+    .card-grid.cols-2,
+    .card-grid.cols-3 { grid-template-columns: 1fr; }
+  }
+
+  .card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 24px;
+    border-top: 3px solid var(--gold);
+  }
+
+  .card.dark {
+    background: var(--navy);
+    border-color: transparent;
+    border-top-color: var(--gold);
+  }
+
+  .card.subtle {
+    background: var(--off);
+    border-color: var(--border);
+    border-top: none;
+  }
+
+  .card-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+
+  .card.dark .card-label { color: var(--gold-lt); }
+
+  .card-title {
+    font-family: 'Instrument Serif', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--navy);
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .card.dark .card-title { color: var(--white); }
+
+  .card-body {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--muted);
+    font-weight: 300;
+  }
+
+  .card.dark .card-body { color: rgba(255,255,255,0.65); }
+  .card.dark strong { color: var(--white); }
+
+  .step-list {
+    counter-reset: steps;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 32px;
+  }
+
+  .step-item {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    gap: 0;
+    border-bottom: 1px solid var(--border);
+    padding: 24px 0;
+  }
+
+  .step-item:first-child { border-top: 1px solid var(--border); }
+
+  .step-num {
+    font-family: 'Instrument Serif', serif;
+    font-size: 28px;
+    color: var(--gold);
+    font-weight: 400;
+    line-height: 1.1;
+    padding-top: 2px;
+  }
+
+  .step-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+
+  .step-body {
+    font-size: 13.5px;
+    color: var(--muted);
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  .step-body strong { color: var(--text); font-weight: 600; }
+
+  .callout {
+    background: var(--gold-dim);
+    border-left: 3px solid var(--gold);
+    padding: 18px 22px;
+    border-radius: 0 3px 3px 0;
+    margin: 24px 0;
+  }
+
+  .callout-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+
+  .callout p { font-size: 14px; color: var(--navy); font-weight: 400; margin: 0; }
+
+  .do-dont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 24px 0 32px;
+  }
+
+  @media (max-width: 600px) { .do-dont { grid-template-columns: 1fr; } }
+
+  .do-box {
+    padding: 20px;
+    border-radius: 3px;
+    background: rgba(34,197,94,0.06);
+    border: 1px solid rgba(34,197,94,0.2);
+  }
+
+  .dont-box {
+    padding: 20px;
+    border-radius: 3px;
+    background: rgba(239,68,68,0.05);
+    border: 1px solid rgba(239,68,68,0.15);
+  }
+
+  .do-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #16a34a;
+    margin-bottom: 10px;
+  }
+
+  .dont-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #dc2626;
+    margin-bottom: 10px;
+  }
+
+  .do-item, .dont-item {
+    font-size: 13px;
+    line-height: 1.55;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    color: var(--text);
+    font-weight: 300;
+  }
+
+  .do-item:last-child, .dont-item:last-child { border-bottom: none; }
+  .do-item::before { content: '✓ '; color: #16a34a; font-weight: 600; }
+  .dont-item::before { content: '✗ '; color: #dc2626; font-weight: 600; }
+
+  .table-wrap {
+    overflow-x: auto;
+    margin: 16px 0 32px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+  }
+
+  table { width: 100%; border-collapse: collapse; }
+
+  thead tr { background: var(--navy); }
+
+  thead th {
+    padding: 12px 18px;
+    text-align: left;
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    font-weight: 400;
+  }
+
+  tbody td {
+    padding: 13px 18px;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text);
+    font-weight: 300;
+    vertical-align: top;
+  }
+
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover td { background: rgba(200,153,42,0.03); }
+
+  .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+
+  .tag-gold { background: var(--gold-dim); color: var(--gold); }
+  .tag-navy { background: rgba(13,27,53,0.08); color: var(--navy); }
+  .tag-green { background: rgba(34,197,94,0.08); color: #16a34a; }
+
+  .checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 16px 0 32px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .check-item {
+    display: grid;
+    grid-template-columns: 28px 1fr auto;
+    align-items: start;
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--border);
+    gap: 12px;
+  }
+
+  .check-item:last-child { border-bottom: none; }
+
+  .check-box {
+    width: 18px;
+    height: 18px;
+    border: 1.5px solid var(--border-gold);
+    border-radius: 2px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .check-text {
+    font-size: 13.5px;
+    font-weight: 300;
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  .check-text strong { font-weight: 600; }
+
+  .check-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    white-space: nowrap;
+    padding-top: 3px;
+  }
+
+  .phase-banner {
+    background: var(--navy-mid);
+    border-radius: 3px;
+    padding: 20px 28px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 24px 0 32px;
+    flex-wrap: wrap;
+  }
+
+  .phase-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    white-space: nowrap;
+  }
+
+  .phase-text {
+    font-size: 14px;
+    color: rgba(255,255,255,0.75);
+    font-weight: 300;
+  }
+
+  .phase-text strong { color: var(--white); font-weight: 600; }
+
+  code {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    background: rgba(13,27,53,0.06);
+    padding: 2px 6px;
+    border-radius: 2px;
+    color: var(--navy);
+  }
+
+  /* 9:16 MOCKUP */
+  .mockup-section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 48px;
+    align-items: start;
+    margin: 32px 0;
+  }
+
+  @media (max-width: 768px) {
+    .mockup-section { grid-template-columns: 1fr; }
+  }
+
+  .phone-outer {
+    width: 200px;
+    flex-shrink: 0;
+  }
+
+  .phone-shell {
+    width: 200px;
+    height: 430px;
+    background: var(--navy);
+    border-radius: 28px;
+    padding: 10px;
+    position: relative;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.08),
+      0 24px 48px rgba(13,27,53,0.4),
+      inset 0 1px 0 rgba(255,255,255,0.06);
+  }
+
+  .phone-notch {
+    width: 60px;
+    height: 10px;
+    background: var(--navy);
+    border-radius: 0 0 8px 8px;
+    margin: 0 auto 4px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .phone-screen {
+    width: 180px;
+    height: 406px;
+    background: #1a1a2e;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Rule of thirds grid */
+  .thirds-grid {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    pointer-events: none;
+    z-index: 3;
+  }
+
+  .third-row {
+    border-bottom: 1px dashed rgba(200,153,42,0.35);
+    position: relative;
+  }
+
+  .third-row:last-child { border-bottom: none; }
+
+  /* Vertical thirds */
+  .thirds-grid::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(90deg,
+        transparent 33.33%,
+        rgba(200,153,42,0.2) 33.33%,
+        rgba(200,153,42,0.2) calc(33.33% + 1px),
+        transparent calc(33.33% + 1px),
+        transparent 66.66%,
+        rgba(200,153,42,0.2) 66.66%,
+        rgba(200,153,42,0.2) calc(66.66% + 1px),
+        transparent calc(66.66% + 1px)
+      );
+  }
+
+  /* Zone labels */
+  .zone-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+  }
+
+  .zone-mid {
+    position: absolute;
+    top: 33.33%;
+    left: 0;
+    right: 0;
+    height: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+  }
+
+  .zone-bot {
+    position: absolute;
+    top: 66.66%;
+    left: 0;
+    right: 0;
+    height: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+  }
+
+  .zone-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 4px 8px;
+    border-radius: 2px;
+  }
+
+  .zone-label.text-zone {
+    background: rgba(200,153,42,0.15);
+    border: 1px solid rgba(200,153,42,0.4);
+    color: var(--gold-lt);
+  }
+
+  .zone-label.face-zone {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.6);
+  }
+
+  .zone-label.body-zone {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.4);
+  }
+
+  /* Advisor silhouette in mid zone */
+  .advisor-silhouette {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    z-index: 2;
+  }
+
+  /* Text hook mockup in top zone */
+  .hook-text-mockup {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    z-index: 5;
+  }
+
+  .hook-line {
+    display: block;
+    font-family: 'Instrument Serif', serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--white);
+    line-height: 1.25;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+  }
+
+  .hook-line.gold { color: var(--gold-lt); }
+
+  /* Caption bar at bottom */
+  .caption-bar {
+    position: absolute;
+    bottom: 24px;
+    left: 12px;
+    right: 12px;
+    z-index: 5;
+    background: rgba(13,27,53,0.7);
+    border-radius: 3px;
+    padding: 6px 8px;
+  }
+
+  .caption-text {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 8px;
+    font-weight: 600;
+    color: var(--white);
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+  }
+
+  /* Progress bar */
+  .progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: rgba(255,255,255,0.15);
+    z-index: 6;
+  }
+
+  .progress-fill {
+    height: 100%;
+    width: 35%;
+    background: var(--gold);
+    border-radius: 0 1px 1px 0;
+  }
+
+  /* Background gradient for screen */
+  .screen-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+      #0a1628 0%,
+      #0f1f3d 40%,
+      #152040 70%,
+      #0d1830 100%
+    );
+  }
+
+  .mockup-notes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 8px;
+  }
+
+  .note-item {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: 14px;
+    align-items: start;
+  }
+
+  .note-num {
+    width: 24px;
+    height: 24px;
+    background: var(--navy);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    color: var(--gold-lt);
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .note-content {}
+
+  .note-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 3px;
+  }
+
+  .note-body {
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 300;
+    line-height: 1.55;
+  }
+
+  .zone-band {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border-radius: 3px;
+    margin-bottom: 8px;
+  }
+
+  .zone-band.gold-band {
+    background: var(--gold-dim);
+    border: 1px solid var(--border-gold);
+  }
+
+  .zone-band.mid-band {
+    background: rgba(13,27,53,0.05);
+    border: 1px solid var(--border);
+  }
+
+  .zone-band.low-band {
+    background: rgba(13,27,53,0.03);
+    border: 1px solid rgba(13,27,53,0.07);
+  }
+
+  .zone-band-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .zone-band.gold-band .zone-band-label { color: var(--gold); }
+  .zone-band.mid-band .zone-band-label { color: var(--navy); }
+  .zone-band.low-band .zone-band-label { color: var(--muted); }
+
+  .zone-band-desc {
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 300;
+  }
+
+  .footer {
+    background: var(--navy);
+    padding: 32px 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 40px;
+  }
+
+  .footer-brand {
+    font-family: 'Instrument Serif', serif;
+    font-size: 16px;
+    color: var(--white);
+    font-style: italic;
+  }
+
+  .footer-note {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.3);
+  }
+
+  @media (max-width: 768px) { .footer { padding: 24px 28px; } }
+
+  h3.subsection {
+    font-family: 'Instrument Serif', serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--navy);
+    margin: 32px 0 16px;
+  }
+</style>
 </head>
 <body>
-<p class="p1"><span class="s1">EP WEALTH ADVISORS · ADVISOR CONTENT GUIDE</span></p>
-<h1 style="margin: 0.0px 0.0px 20.0px 0.0px; font: 40.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s1">Showing Up</span><span class="s2"><br>
-</span><span class="s3">On Camera</span></h1>
-<p class="p3"><span class="s1">Version 1.0</span></p>
-<p class="p4"><span class="s1">For EP Wealth Advisors</span></p>
-<p class="p3"><span class="s1">Purpose</span></p>
-<p class="p4"><span class="s1">Short-form video content for paid and organic distribution</span></p>
-<p class="p3"><span class="s1">Channels</span></p>
-<p class="p4"><span class="s1">Meta · LinkedIn · Instagram · YouTube Shorts</span></p>
-<p class="p5"><span class="s4">WHY THIS WORKS</span></p>
-<p class="p5"><span class="s4">SETUP &amp; GEAR</span></p>
-<p class="p5"><span class="s4">ENVIRONMENT</span></p>
-<p class="p5"><span class="s4">FILMING</span></p>
-<p class="p5"><span class="s4">CONTENT TYPES</span></p>
-<p class="p5"><span class="s4">DELIVERY</span></p>
-<p class="p5"><span class="s4">FRAMING GUIDE</span></p>
-<p class="p5"><span class="s4">SESSIONS</span></p>
-<p class="p5"><span class="s4">DISTRIBUTION</span></p>
-<p class="p5"><span class="s4">METRICS</span></p>
-<p class="p5"><span class="s4">COMPLIANCE</span></p>
-<p class="p6"><span class="s2">00</span></p>
-<p class="p7"><span class="s2">Why Advisor-Led Content</span></p>
-<p class="p8"><span class="s2">What this program is, what it asks of you, and what it's designed to do.</span></p>
-<p class="p9"><span class="s2">Short-form video featuring EP Wealth advisors speaking directly to camera tends to build trust and generate engagement in ways that other creative often doesn't. The reason is straightforward: people trust people. When a qualified advisor addresses a financial concern clearly and specifically, it carries a credibility that a generic or stock image cannot replicate.</span></p>
-<p class="p9"><span class="s2">This guide is designed to make the process as straightforward as possible. You don't need to be a natural on camera. You don't need production experience. You need a phone, decent light, and something real to say. The rest of this guide handles everything else.</span></p>
-<p class="p9"><span class="s5">What this asks of you:</span><span class="s2"> Roughly 60 minutes every two to three weeks — a filming session that produces six to eight short videos. The marketing team handles editing, captioning, distribution, and paid amplification. Your job is to show up and speak to what you know.</span></p>
-<p class="p10"><span class="s6">WHAT THIS IS</span></p>
-<p class="p11"><span class="s6">Authentic, direct, advisor-led content</span></p>
-<p class="p12"><span class="s6">Short videos of EP Wealth advisors speaking directly to specific financial concerns. No studio. No script. The advisor's expertise and presence is the asset.</span></p>
-<p class="p10"><span class="s6">WHAT THIS IS NOT</span></p>
-<p class="p11"><span class="s6">Polished brand advertising</span></p>
-<p class="p12"><span class="s6">This is not a TV commercial or a scripted corporate video. The moment it looks produced and performed, it risks losing the quality that makes it effective.</span></p>
-<p class="p10"><span class="s6">WHAT YOU GET</span></p>
-<p class="p11"><span class="s6">Personal brand and attributed leads</span></p>
-<p class="p12"><span class="s6">Leads generated through your content are attributed to the content you produce. Your LinkedIn has the potential to grow. EP Wealth covers production support and media spend.</span></p>
-<p class="p6"><span class="s2">01</span></p>
-<p class="p7"><span class="s2">Setup &amp; Gear</span></p>
-<p class="p8"><span class="s2">Everything needed before pressing record. Achievable for under $500 total. No production crew required.</span></p>
-<p class="p13"><span class="s1">CAMERA</span></p>
-<p class="p14"><span class="s1">iPhone 14+ or any recent flagship</span></p>
-<p class="p15"><span class="s7">Use the back camera, not the front.</span><span class="s1"> The rear camera on any recent iPhone or Android produces significantly better image quality. Film vertically (portrait) for all social formats. If you have an iPhone 14 or newer, that is all the camera you need. Do not purchase a separate camera.</span></p>
-<p class="p13"><span class="s1">MICROPHONE — MOST IMPORTANT PURCHASE</span></p>
-<p class="p14"><span class="s1">Rode Wireless GO II or DJI Mic 2</span></p>
-<p class="p15"><span class="s7">Audio quality matters just as much as video quality.</span><span class="s1"> Poor audio causes people to stop watching regardless of what is being said. The Rode Wireless GO II (~$299) or DJI Mic 2 (~$199) clip on and connect wirelessly. Either one would greatly enhance the quality of the videos.</span></p>
-<p class="p10"><span class="s6">STABILIZATION</span></p>
-<p class="p11"><span class="s6">Tripod — ideal</span></p>
-<p class="p12"><span class="s6">The camera should be completely still. An adjustable tripod ($30–60) works for all standard filming setups. The DJI OM 6 gimbal (~$159) is an option if you want to film while moving. For most sessions, a tripod is all you need. Handheld is not ideal but okay in a pinch.</span></p>
-<p class="p10"><span class="s6">LIGHTING</span></p>
-<p class="p11"><span class="s6">Natural light first, key light second</span></p>
-<p class="p12"><span class="s6">A window with indirect natural light, camera facing the window and you facing the camera, is the best and lowest-cost lighting setup available. For indoor or low-light situations, an Elgato Key Light (~$199) or a basic ring light ($40–80) works well. Avoid overhead fluorescent office lighting on its own.</span></p>
-<p class="p10"><span class="s8">TOTAL INVESTMENT</span></p>
-<p class="p16"><span class="s8">Minimum (phone + tripod + ring light): ~$100. Recommended: Phone + Rode Wireless GO II + Elgato Key Light + tripod ≈ $500.</span></p>
-<p class="p6"><span class="s2">02</span></p>
-<p class="p7"><span class="s2">Environment &amp; Lighting</span></p>
-<p class="p8"><span class="s2">Where and how the shot is framed. The background sends a signal before you speak a word.</span></p>
-<p class="p10"><span class="s6">OPTION A — PREFERRED</span></p>
-<p class="p11"><span class="s6">Office with natural depth</span></p>
-<p class="p12"><span class="s6">Your actual office with bookshelves or a window visible in the background, slightly out of focus. Real environment signals authenticity. Clean but not staged. This is the strongest default setting.</span></p>
-<p class="p10"><span class="s6">OPTION B — STRONG</span></p>
-<p class="p11"><span class="s6">Plain wall, neutral tone</span></p>
-<p class="p12"><span class="s6">A clean cream, white, or dark wall with you in sharp focus and nothing distracting behind. Works well for content where a text overlay will appear on screen. Clean, professional, widely usable.</span></p>
-<p class="p10"><span class="s6">OPTION C — CONTEXTUAL</span></p>
-<p class="p11"><span class="s6">Meeting room or off-site location</span></p>
-<p class="p12"><span class="s6">A client meeting space or a clean coffee shop environment. Adds authenticity for more conversational content. Ensure background noise is manageable with the wireless mic.</span></p>
-<p class="p17"><span class="s9">LIGHTING: DO</span></p>
-<p class="p18"><span class="s9">Face a window — natural light front-on is the best available light</span></p>
-<p class="p18"><span class="s9">Ensure your eyes are bright — light should create a visible catchlight in the eyes</span></p>
-<p class="p18"><span class="s9">Film in morning or late afternoon for warmer natural light</span></p>
-<p class="p18"><span class="s9">Position a key light at roughly 45° to your face, slightly above eye level</span></p>
-<p class="p18"><span class="s9">Aim for slightly warm color temperature — it reads as more natural on camera</span></p>
-<p class="p19"><span class="s10">LIGHTING: DON'T</span></p>
-<p class="p18"><span class="s10">Film with a window behind you — creates a silhouette</span></p>
-<p class="p18"><span class="s10">Rely only on overhead office fluorescents — creates unflattering shadows</span></p>
-<p class="p18"><span class="s10">Use a ring light centered directly in front — creates a flat look that can undermine authority</span></p>
-<p class="p18"><span class="s10">Mix warm and cool light sources — looks inconsistent on screen</span></p>
-<p class="p10"><span class="s8">THE 60-SECOND LIGHT CHECK</span></p>
-<p class="p16"><span class="s8">Before filming, look at yourself on the phone screen. Are your eyes clearly visible and lit? Is there any strong shadow across one side of your face? Is the background distractingly busy or dark? If eyes are bright and your face is evenly lit, the lighting is good.</span></p>
-<p class="p6"><span class="s2">03</span></p>
-<p class="p7"><span class="s2">Filming Technique</span></p>
-<p class="p8"><span class="s2">Frame, distance, eye contact, and format.</span></p>
-<p class="p10"><span class="s6">FRAMING</span></p>
-<p class="p11"><span class="s6">Medium close-up. Leave room in the top third for negative space.</span></p>
-<p class="p12"><span class="s6">Your frame should show head and chest — not full body, not extreme close-up. Leave the upper third of the frame for negative space, this will be used for text or captions. This is the composition that tends to read as authoritative and engaged. See the framing guide in Section 07 for a visual reference.</span></p>
-<p class="p10"><span class="s6">DISTANCE</span></p>
-<p class="p11"><span class="s6">2–3 feet from camera.</span></p>
-<p class="p12"><span class="s6">The camera should be 2–3 feet from your face. This creates conversational intimacy. Anything further reads as a stage presentation. Move the tripod closer rather than zooming in — digital zoom degrades quality. Physical distance is the only variable worth adjusting here.</span></p>
-<p class="p10"><span class="s6">EYE CONTACT</span></p>
-<p class="p11"><span class="s6">Look at the lens, not yourself.</span></p>
-<p class="p12"><span class="s6">Look directly at the camera lens — not at your own face on the screen. Looking at the screen instead of the lens reads as avoiding eye contact, which can undermine the trust and directness these videos are built around. If it helps, place a small sticker or piece of tape next to the lens as a focus point.</span></p>
-<p class="p10"><span class="s6">FORMAT SETTINGS</span></p>
-<p class="p11"><span class="s6">4K 30fps. Film vertically.</span></p>
-<p class="p12"><span class="s6">Set your iPhone to 4K 30fps in Camera settings before filming. Film everything vertically (portrait orientation). This gives the most flexibility across platforms — vertical content can be reframed for horizontal if needed. Horizontal content cannot be made vertical without significant quality loss.</span></p>
-<p class="p6"><span class="s2">04</span></p>
-<p class="p7"><span class="s2">Content Types</span></p>
-<p class="p8"><span class="s2">The repeatable formats you'll film. Each one has a specific job in the funnel.</span></p>
-<table cellspacing="0" cellpadding="0" class="t1">
-  <tbody>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p20"><span class="s2">FORMAT</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p20"><span class="s2">STRUCTURE</span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p20"><span class="s2">LENGTH</span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p20"><span class="s2">PURPOSE</span></p>
-      </td>
-      <td valign="middle" class="td5">
-        <p class="p20"><span class="s2">CHANNEL</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td6">
-        <p class="p21"><span class="s2">The Hook Shot</span></p>
-      </td>
-      <td valign="top" class="td7">
-        <p class="p18"><span class="s2">Hook → 1 insight → soft close</span></p>
-      </td>
-      <td valign="top" class="td8">
-        <p class="p18"><span class="s2">15–45s</span></p>
-      </td>
-      <td valign="top" class="td9">
-        <p class="p22"><span class="s11">Conversion</span></p>
-      </td>
-      <td valign="top" class="td10">
-        <p class="p18"><span class="s2">Meta Reels, Instagram, LinkedIn</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td6">
-        <p class="p21"><span class="s2">The Truth Drop</span></p>
-      </td>
-      <td valign="top" class="td7">
-        <p class="p18"><span class="s2">Surprising fact → explanation → implication</span></p>
-      </td>
-      <td valign="top" class="td8">
-        <p class="p18"><span class="s2">15–45s</span></p>
-      </td>
-      <td valign="top" class="td9">
-        <p class="p1"><span class="s8">Consideration</span></p>
-      </td>
-      <td valign="top" class="td10">
-        <p class="p18"><span class="s2">Meta Feed, LinkedIn, YouTube Shorts</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td6">
-        <p class="p21"><span class="s2">The Scenario</span></p>
-      </td>
-      <td valign="top" class="td7">
-        <p class="p18"><span class="s2">Anonymous client situation → gap → what changes with a plan</span></p>
-      </td>
-      <td valign="top" class="td8">
-        <p class="p18"><span class="s2">60–90s</span></p>
-      </td>
-      <td valign="top" class="td9">
-        <p class="p1"><span class="s8">Consideration</span></p>
-      </td>
-      <td valign="top" class="td10">
-        <p class="p18"><span class="s2">Meta Feed, LinkedIn</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td6">
-        <p class="p21"><span class="s2">The Myth Bust</span></p>
-      </td>
-      <td valign="top" class="td7">
-        <p class="p18"><span class="s2">"Most people think X. Here's what's actually true."</span></p>
-      </td>
-      <td valign="top" class="td8">
-        <p class="p18"><span class="s2">15–45s</span></p>
-      </td>
-      <td valign="top" class="td9">
-        <p class="p23"><span class="s11">Conversion</span></p>
-      </td>
-      <td valign="top" class="td10">
-        <p class="p18"><span class="s2">All channels</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td6">
-        <p class="p21"><span class="s2">The Client Story</span></p>
-      </td>
-      <td valign="top" class="td7">
-        <p class="p18"><span class="s2">Anonymous scenario → challenge → outcome</span></p>
-      </td>
-      <td valign="top" class="td8">
-        <p class="p18"><span class="s2">60–90s</span></p>
-      </td>
-      <td valign="top" class="td9">
-        <p class="p22"><span class="s11">Trust</span></p>
-      </td>
-      <td valign="top" class="td10">
-        <p class="p18"><span class="s2">Meta, LinkedIn</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td11">
-        <p class="p21"><span class="s2">The Assessment Bridge</span></p>
-      </td>
-      <td valign="top" class="td12">
-        <p class="p18"><span class="s2">Insight → "here's how we'd look at this specifically" → FHA</span></p>
-      </td>
-      <td valign="top" class="td13">
-        <p class="p18"><span class="s2">30–45s</span></p>
-      </td>
-      <td valign="top" class="td14">
-        <p class="p22"><span class="s11">Conversion</span></p>
-      </td>
-      <td valign="top" class="td15">
-        <p class="p18"><span class="s2">Retargeting only</span></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<p class="p10"><span class="s6">THE HOOK SHOT — START HERE</span></p>
-<p class="p11"><span class="s6">One idea. Under a minute. Ideally around 15s. Stop the scroll.</span></p>
-<p class="p24"><span class="s6">Structure:</span></p>
-<p class="p12"><span class="s6">Seconds 0–3: The hook. No preamble.</span></p>
-<p class="p12"><span class="s6">Seconds 3–30: One supporting insight or scenario.</span></p>
-<p class="p12"><span class="s6">Seconds 30–45: The resolution and CTA — what should the viewer take from this?</span></p>
-<p class="p25"><span class="s2"></span><br></p>
-<p class="p12"><span class="s12">Example:</span><span class="s6"> "Your RSUs vested last month. The tax hit is already locked in. Did anyone call you before that happened?" [30 seconds explaining why the planning window is before the vest, not after]</span></p>
-<p class="p25"><span class="s2"></span><br></p>
-<p class="p12"><span class="s6">This is the primary format for building awareness and testing which topics resonate.</span></p>
-<p class="p10"><span class="s6">THE SCENARIO — STRONGEST FOR TRUST</span></p>
-<p class="p11"><span class="s6">Anonymous client situation as proof of insight.</span></p>
-<p class="p24"><span class="s6">Structure:</span></p>
-<p class="p12"><span class="s6">"I worked with someone recently who…" → describe the situation</span></p>
-<p class="p12"><span class="s6">The gap or decision they were about to make</span></p>
-<p class="p12"><span class="s6">What changed when they had the right plan</span></p>
-<p class="p25"><span class="s2"></span><br></p>
-<p class="p12"><span class="s12">Critical rule:</span><span class="s6"> Always fully anonymous — no names, no identifying details. The situation is what resonates. The viewer maps their own circumstances onto it.</span></p>
-<p class="p25"><span class="s2"></span><br></p>
-<p class="p12"><span class="s12">Compliance note:</span><span class="s6"> Frame as illustrative, not as a testimonial. "Here's a situation I've seen" rather than "here's what we achieved for a client."</span></p>
-<p class="p10"><span class="s6">THE ASSESSMENT BRIDGE — WARM AUDIENCES ONLY</span></p>
-<p class="p11"><span class="s6">A direct invitation to get your numbers run.</span></p>
-<p class="p24"><span class="s6">This format runs to retargeting audiences only — not cold traffic.</span></p>
-<p class="p25"><span class="s2"></span><br></p>
-<p class="p12"><span class="s6">Bridge the insight from earlier content to a specific invitation: "We run an actual analysis of your specific situation — income, assets, tax exposure, timing — and show you what the numbers actually look like. No pitch. No products. Just your numbers."</span></p>
-<p class="p25"><span class="s2"></span><br></p>
-<p class="p12"><span class="s6">This format should generally not be the first thing someone sees from EP Wealth.</span></p>
-<p class="p10"><span class="s6">THE TRUTH DROP — HIGHEST SHAREABILITY</span></p>
-<p class="p11"><span class="s6">A surprising fact, explained plainly.</span></p>
-<p class="p24"><span class="s6">Structure:</span></p>
-<p class="p12"><span class="s6">Open with the surprising stat or fact.</span></p>
-<p class="p12"><span class="s6">Explain why it's true and why most people don't know it.</span></p>
-<p class="p12"><span class="s6">Close with the single most important implication.</span></p>
-<p class="p25"><span class="s2"></span><br></p>
-<p class="p12"><span class="s12">Example:</span><span class="s6"> "Up to 85% of your Social Security benefit can be subject to federal income tax. Most people find this out at tax time — not before. The window to plan around it is before you start collecting, not after."</span></p>
-<p class="p25"><span class="s2"></span><br></p>
-<p class="p12"><span class="s6">Works across all formats including as a standalone static image with kinetic text.</span></p>
-<p class="p6"><span class="s2">05</span></p>
-<p class="p7"><span class="s2">Delivery &amp; On-Camera Presence</span></p>
-<p class="p8"><span class="s2">How to speak, move, and carry yourself. This is the hardest thing to describe and the most important to get right.</span></p>
-<p class="p9"><span class="s2">The most common issue advisors face on camera is performing — shifting into a slightly more formal, more careful version of themselves when they feel the camera. Viewers pick up on this quickly and it tends to register as either uncomfortable or inauthentic. The goal is the opposite: </span><span class="s5">be less polished, not more.</span><span class="s2"> Speak the way you would to a client you've known for three years.</span></p>
-<p class="p26"><span class="s2">1</span></p>
-<p class="p27"><span class="s2">Start mid-thought — no intro</span></p>
-<p class="p12"><span class="s2">Never open with "Hi, I'm [name] from EP Wealth Advisors." The camera is already rolling when you start speaking. The hook is the first thing to say. Your name and firm appear in the caption and the end card — they don't need to open the video. Starting mid-thought signals that you have something worth saying immediately.</span></p>
-<p class="p26"><span class="s2">2</span></p>
-<p class="p27"><span class="s2">Pause before the key words</span></p>
-<p class="p12"><span class="s2">A brief pause before the most important word or phrase in a sentence creates emphasis and gives the viewer time to absorb what's coming. </span><span class="s13">"Most people don't realize their inherited IRA could cost their beneficiaries… forty cents on the dollar."</span><span class="s2"> The pause builds anticipation and prevents the rushed cadence that makes delivery sound scripted. It also slows the pace in a way that works well on camera.</span></p>
-<p class="p26"><span class="s2">3</span></p>
-<p class="p27"><span class="s2">Speak to one person, not an audience</span></p>
-<p class="p12"><span class="s2">Imagine you're telling one specific person — a current client you know well — something they need to hear over coffee. Not presenting to a room, not recording for posterity. The conversational intimacy of speaking to one person is what tends to make these videos feel real and direct. If it sounds like a keynote, that's a signal to reset.</span></p>
-<p class="p26"><span class="s2">4</span></p>
-<p class="p27"><span class="s2">Let the natural imperfections stay</span></p>
-<p class="p12"><span class="s2">Small pauses, a natural sentence restart, an "uh" — these often register as features, not flaws. They signal that this is genuine and unrehearsed, which is part of what makes it worth watching. Reshoot if you lose the thread entirely, if external noise interrupts, or if the delivery is so stilted it reads as uncomfortable. Otherwise, the first take that feels real is usually the one to keep. Many times, the best thing to do is keep talking, even if you stumble. We can edit those imperfections out many times. Especially if you record the same script several times.<span class="Apple-converted-space"> </span></span></p>
-<p class="p26"><span class="s2">5</span></p>
-<p class="p27"><span class="s2">Physical presence: engaged but still</span></p>
-<p class="p12"><span class="s2">Minimal swaying, pacing, or fidgeting — the camera amplifies movement significantly. Natural hand gestures while speaking are fine and can add energy. Lean slightly forward toward the camera — it reads as engaged and confident. Leaning back reads as detached. Keep your head level; chin slightly down rather than up.</span></p>
-<p class="p26"><span class="s2">6</span></p>
-<p class="p27"><span class="s2">Warm up before filming</span></p>
-<p class="p12"><span class="s2">Do not film cold. Have a brief conversation about anything before the camera rolls — the goal is to get into natural conversational mode before you start. Alternatively, film a 60-second throwaway take on something off-topic just to break any camera anxiety. The first real take after a warm-up is almost always better than the first cold take.</span></p>
-<p class="p17"><span class="s9">DELIVERY: DO</span></p>
-<p class="p18"><span class="s9">Start with the hook immediately — no preamble</span></p>
-<p class="p18"><span class="s9">Use natural pauses before key words</span></p>
-<p class="p18"><span class="s9">Speak slightly slower than your normal pace</span></p>
-<p class="p18"><span class="s9">Use specific numbers and scenarios — specificity signals credibility</span></p>
-<p class="p18"><span class="s9">Cover one idea per video</span></p>
-<p class="p18"><span class="s9">End after the point lands</span></p>
-<p class="p19"><span class="s10">DELIVERY: DON'T</span></p>
-<p class="p18"><span class="s10">Introduce yourself at the start</span></p>
-<p class="p18"><span class="s10">Read from a script — use talking points at most</span></p>
-<p class="p18"><span class="s10">Try to cover multiple ideas in one video</span></p>
-<p class="p18"><span class="s10">Film more than 90 seconds for a single concept</span></p>
-<p class="p18"><span class="s10">Do more than 3 takes per hook — the first real take is usually best</span></p>
-<p class="p6"><span class="s2">06</span></p>
-<p class="p7"><span class="s2">The 9:16 Framing Guide</span></p>
-<p class="p8"><span class="s2">How to position yourself within the vertical frame so that text overlays, captions, and your face all have the right space.</span></p>
-<p class="p9"><span class="s2">All content is filmed in 9:16 (portrait) format. This is the native format for Meta Reels, Instagram Stories, LinkedIn video, and YouTube Shorts. The frame is divided into three horizontal zones using the rule of thirds. Understanding how these zones work determines where you position yourself and where text hooks and captions will be placed in post.</span></p>
-<p class="p28"><span class="s2"></span><br></p>
-<p class="p29"><span class="s2"></span><br></p>
-<p class="p30"><span class="s2"></span><br></p>
-<p class="p30"><span class="s2"></span><br></p>
-<p class="p30"><span class="s2"></span><br></p>
-<p class="p30"><span class="s2"></span><br></p>
-<p class="p31"><span class="s2">TEXT HOOK ZONE</span></p>
-<p class="p32"><span class="s2">EYES HERE</span></p>
-<p class="p33"><span class="s2">CHEST / SHOULDERS</span></p>
-<p class="p34"><span class="s14">85% of your</span></p>
-<p class="p34"><span class="s14">Social Security</span></p>
-<p class="p35"><span class="s14">can still be taxed.</span></p>
-<p class="p36"><span class="s15">Most people find this out at tax time — not before the window to plan closes.</span></p>
-<p class="p10"><span class="s8">TOP THIRD — TEXT HOOK ZONE</span></p>
-<p class="p37"><span class="s2">Leave the top third as negative space. This is where the marketing team places the text hook overlay — the large, bold opening line that stops the scroll for viewers watching on mute. If you crowd this area with your face or body, the text overlay becomes unreadable. Position yourself so this zone stays clear. You can navigate to your phone settings, find camera settings, then<span class="Apple-converted-space"> </span></span></p>
-<p class="p38"><span class="s16">MIDDLE THIRD — YOUR EYES</span></p>
-<p class="p37"><span class="s2">Your eyes should land in the middle third — ideally near the upper intersection of the rule of thirds grid. This is the compositional sweet spot that reads as authoritative and engaged without appearing to crowd the frame. Adjust your tripod height until this is achieved before filming.</span></p>
-<p class="p39"><span class="s17">BOTTOM THIRD — CHEST, SHOULDERS, CAPTIONS</span></p>
-<p class="p37"><span class="s2">Your chest and shoulders occupy the lower third. The marketing team places closed captions here. Avoid busy patterns or bright graphics on clothing in this area — they compete visually with caption text. Solid colors or subtle textures work best.</span></p>
-<p class="p10"><span class="s8">QUICK SETUP CHECK</span></p>
-<p class="p16"><span class="s8">Before filming, hold your phone up and look at the live view. Are your eyes sitting in the middle third of the frame? Is there clear space above your head in the top third? If yes, the framing is correct. If your eyes are in the center of the frame, raise the tripod or step back slightly.</span></p>
-<p class="p6"><span class="s2">07</span></p>
-<p class="p7"><span class="s2">The Filming Session</span></p>
-<p class="p8"><span class="s2">How to run a session efficiently. The goal is 6–8 usable videos in 90 minutes.</span></p>
-<p class="p10"><span class="s4">SESSION CADENCE</span></p>
-<p class="p40"><span class="s18">Once every 2–3 weeks.</span><span class="s4"> Each 60-minute session produces 6–8 videos that are edited, captioned, and released across 2–3 weeks. This cadence maintains content freshness without requiring significant ongoing time.</span></p>
-<p class="p26"><span class="s2">1</span></p>
-<p class="p27"><span class="s2">Pre-Session Brief (sent 48 hours before)</span></p>
-<p class="p12"><span class="s2">The marketing team sends a brief with 8–10 hook options 48 hours before each session. You select 6 that genuinely resonate with you — the constraint matters. Hooks you find hollow or inauthentic will show on camera. You can also bring 1–2 of your own based on recent client conversations. Those often produce the strongest content. We will just need to get these approved by Compliance before using them in market.</span></p>
-<p class="p26"><span class="s2">2</span></p>
-<p class="p27"><span class="s2">Day-Of Setup (15 minutes)</span></p>
-<p class="p12"><span class="s2">Set up the tripod at correct height (lens at your eye level). Run the light check — 60 seconds maximum. Attach the wireless mic. Film one 30-second warm-up take on anything at all — this is discarded, it just breaks the camera anxiety. Clean the camera lens with a cloth. These 15 minutes prevent an hour of reshoots later.</span></p>
-<p class="p26"><span class="s2">3</span></p>
-<p class="p27"><span class="s2">Film Hook Shots First</span></p>
-<p class="p12"><span class="s2">Film the 2–3 most direct or challenging hooks first, while your energy is highest. Try avoiding reading directly off the script if possible. Give each hook a maximum of 3 takes. The first take that feels real is usually the right one. If a hook isn't working after 3 takes, move on and return to it later. Forcing it produces exactly the kind of stiff delivery you're trying to avoid.</span></p>
-<p class="p26"><span class="s2">4</span></p>
-<p class="p27"><span class="s2">Reset Between Takes</span></p>
-<p class="p12"><span class="s2">Take 30–60 seconds between hooks to break the state — a brief conversation, a drink of water, a physical shake-out. The camera accumulates tension over time. Regular resets prevent the cumulative stiffening that makes the last few videos of a session noticeably worse than the first.</span></p>
-<p class="p26"><span class="s2">5</span></p>
-<p class="p27"><span class="s2">End with Conversational Content</span></p>
-<p class="p12"><span class="s2">Close the session with Scenario or Truth Drop formats — more conversational, lower pressure than direct hook shots. By this point the camera anxiety has usually dropped and the looser delivery shows. Some of the most natural content often comes in the final 20 minutes of a session.</span></p>
-<p class="p26"><span class="s2">6</span></p>
-<p class="p27"><span class="s2">Transfer Footage to Shared Drive</span></p>
-<p class="p12"><span class="s2">After the session, AirDrop or USB transfer all footage to the shared Google Drive folder provided by the marketing team. Label each file clearly with the hook concept: </span><span class="s19">AdvisorName_RSUhook_take2.mov</span><span class="s2">. Upload the same day while the session is fresh. The marketing team handles everything from this point forward.</span></p>
-<p class="p6"><span class="s2">08</span></p>
-<p class="p7"><span class="s2">Where Your Content Goes</span></p>
-<p class="p8"><span class="s2">How videos are distributed across platforms and how your personal channels fit into the program.</span></p>
-<table cellspacing="0" cellpadding="0" class="t1">
-  <tbody>
-    <tr>
-      <td valign="middle" class="td16">
-        <p class="p20"><span class="s2">CHANNEL</span></p>
-      </td>
-      <td valign="middle" class="td17">
-        <p class="p20"><span class="s2">ACCOUNT</span></p>
-      </td>
-      <td valign="middle" class="td18">
-        <p class="p20"><span class="s2">CONTENT TYPE</span></p>
-      </td>
-      <td valign="middle" class="td19">
-        <p class="p20"><span class="s2">FREQUENCY</span></p>
-      </td>
-      <td valign="middle" class="td20">
-        <p class="p20"><span class="s2">PAID?</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td21">
-        <p class="p21"><span class="s2">Meta (Facebook + Instagram)</span></p>
-      </td>
-      <td valign="top" class="td22">
-        <p class="p18"><span class="s2">EP Wealth brand page</span></p>
-      </td>
-      <td valign="top" class="td23">
-        <p class="p18"><span class="s2">All formats</span></p>
-      </td>
-      <td valign="top" class="td24">
-        <p class="p18"><span class="s2">3–4x per week</span></p>
-      </td>
-      <td valign="top" class="td25">
-        <p class="p22"><span class="s11">Yes</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td21">
-        <p class="p21"><span class="s2">LinkedIn (Company)</span></p>
-      </td>
-      <td valign="top" class="td22">
-        <p class="p18"><span class="s2">EP Wealth company page</span></p>
-      </td>
-      <td valign="top" class="td23">
-        <p class="p18"><span class="s2">Truth Drop, Scenario, Myth Bust</span></p>
-      </td>
-      <td valign="top" class="td24">
-        <p class="p18"><span class="s2">2–3x per week</span></p>
-      </td>
-      <td valign="top" class="td25">
-        <p class="p1"><span class="s8">Yes</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td21">
-        <p class="p21"><span class="s2">LinkedIn (Your Profile)</span></p>
-      </td>
-      <td valign="top" class="td22">
-        <p class="p18"><span class="s2">Your personal LinkedIn</span></p>
-      </td>
-      <td valign="top" class="td23">
-        <p class="p18"><span class="s2">All formats — more personal captions</span></p>
-      </td>
-      <td valign="top" class="td24">
-        <p class="p18"><span class="s2">2x per week</span></p>
-      </td>
-      <td valign="top" class="td25">
-        <p class="p41"><span class="s20">Organic</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td21">
-        <p class="p21"><span class="s2">Instagram (Your Profile)</span></p>
-      </td>
-      <td valign="top" class="td22">
-        <p class="p18"><span class="s2">Your personal account (optional)</span></p>
-      </td>
-      <td valign="top" class="td23">
-        <p class="p18"><span class="s2">Hook Shots, Truth Drops</span></p>
-      </td>
-      <td valign="top" class="td24">
-        <p class="p18"><span class="s2">2–3x per week</span></p>
-      </td>
-      <td valign="top" class="td25">
-        <p class="p41"><span class="s20">Organic</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td26">
-        <p class="p21"><span class="s2">YouTube Shorts</span></p>
-      </td>
-      <td valign="top" class="td27">
-        <p class="p18"><span class="s2">EP Wealth YouTube channel</span></p>
-      </td>
-      <td valign="top" class="td28">
-        <p class="p18"><span class="s2">All formats repurposed</span></p>
-      </td>
-      <td valign="top" class="td29">
-        <p class="p18"><span class="s2">2–3x per week</span></p>
-      </td>
-      <td valign="top" class="td30">
-        <p class="p41"><span class="s20">Organic</span></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<p class="p10"><span class="s8">YOUR PERSONAL LINKEDIN</span></p>
-<p class="p16"><span class="s8">Content posted to your personal LinkedIn uses slightly more conversational captions — written in your voice, in first person. This is where your personal brand builds over time. Followers you accumulate there are yours. The marketing team provides caption suggestions for each video but you can adapt them to match how you naturally write.</span></p>
-<p class="p10"><span class="s21">DAY 0</span></p>
-<p class="p11"><span class="s21">Published organically</span></p>
-<p class="p12"><span class="s21">All edited videos go live across channels organically first. Platform-specific captions are written for each — not the same copy across platforms.</span></p>
-<p class="p10"><span class="s21">DAYS 1–3</span></p>
-<p class="p11"><span class="s21">Organic performance monitored</span></p>
-<p class="p12"><span class="s21">The marketing team watches early engagement data — watch time, view rate, comments, shares. This determines which videos get paid amplification.</span></p>
-<p class="p10"><span class="s21">DAY 3+</span></p>
-<p class="p11"><span class="s21">Best performers boosted</span></p>
-<p class="p12"><span class="s21">The video with the strongest organic signal gets promoted as a paid dark post. Budget is applied only to content that has already shown it resonates.</span></p>
-<p class="p6"><span class="s2">09</span></p>
-<p class="p7"><span class="s2">What We Measure</span></p>
-<p class="p8"><span class="s2">The signals that indicate content is working. Shared with you after each session's videos are in market.</span></p>
-<p class="p9"><span class="s2">The marketing team tracks performance for every video and shares a brief summary with you after each content cycle. You don't need to monitor this yourself — but understanding what the numbers mean helps you refine your delivery and hook selection over time.</span></p>
-<table cellspacing="0" cellpadding="0" class="t1">
-  <tbody>
-    <tr>
-      <td valign="middle" class="td31">
-        <p class="p20"><span class="s2">METRIC</span></p>
-      </td>
-      <td valign="middle" class="td32">
-        <p class="p20"><span class="s2">WHAT IT MEANS</span></p>
-      </td>
-      <td valign="middle" class="td33">
-        <p class="p20"><span class="s2">TARGET</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td34">
-        <p class="p21"><span class="s2">Hook Rate</span></p>
-      </td>
-      <td valign="top" class="td35">
-        <p class="p18"><span class="s2">% of people who watched at least 3 seconds. Measures whether the opening hook stopped the scroll.</span></p>
-      </td>
-      <td valign="top" class="td36">
-        <p class="p18"><span class="s2">25%+</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td34">
-        <p class="p21"><span class="s2">Hold Rate</span></p>
-      </td>
-      <td valign="top" class="td35">
-        <p class="p18"><span class="s2">% of 3-second viewers who kept watching to 15 seconds. Measures whether the content after the hook held attention.</span></p>
-      </td>
-      <td valign="top" class="td36">
-        <p class="p18"><span class="s2">40%+</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td34">
-        <p class="p21"><span class="s2">Watch-Through</span></p>
-      </td>
-      <td valign="top" class="td35">
-        <p class="p18"><span class="s2">% who watched at least 50% of the video. Indicates depth of resonance.</span></p>
-      </td>
-      <td valign="top" class="td36">
-        <p class="p18"><span class="s2">35%+</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td34">
-        <p class="p21"><span class="s2">Comments</span></p>
-      </td>
-      <td valign="top" class="td35">
-        <p class="p18"><span class="s2">Qualitative signal — what people say tells you whether the content hit a nerve. Even critical comments indicate resonance.</span></p>
-      </td>
-      <td valign="top" class="td36">
-        <p class="p18"><span class="s2">Any engagement is a signal</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td37">
-        <p class="p21"><span class="s2">Saves / Shares</span></p>
-      </td>
-      <td valign="top" class="td38">
-        <p class="p18"><span class="s2">People saving or forwarding the video indicates they found it genuinely useful. Strong organic signal.</span></p>
-      </td>
-      <td valign="top" class="td39">
-        <p class="p18"><span class="s2">Higher than baseline</span></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<p class="p10"><span class="s8">WHAT THE DATA IS USED FOR</span></p>
-<p class="p16"><span class="s8">Performance data feeds directly into your next session brief. If a specific hook angle or topic performs well, the marketing team builds more hooks around it. If something consistently underperforms, it gets retired. Over time, this means the content you're filming gets progressively better-calibrated to what your audience actually responds to.</span></p>
-<p class="p6"><span class="s2">10</span></p>
-<p class="p7"><span class="s2">Compliance Guidelines</span></p>
-<p class="p9"><span class="s2">The compliance framework for this program is built around a pre-approved content library rather than reviewing each video individually. Hooks and topics within the approved scripts can be filmed and published without additional review. Content outside those categories goes through the standard compliance process before going live.</span></p>
-<p class="p42"><span class="s5">Disclaimer language</span><span class="s2"> is added by the marketing team to all published content and is provided by Compliance.</span></p>
-<p class="p39"><span class="s2">Always added</span></p>
-<p class="p30"><span class="s2"></span><br></p>
-<p class="p42"><span class="s5">Scenario content</span><span class="s2"> is labeled as illustrative: "This is a hypothetical scenario for illustrative purposes" — added in the caption by the marketing team.</span></p>
-<p class="p39"><span class="s2">Scenario format</span></p>
-<p class="p30"><span class="s2"></span><br></p>
-<p class="p42"><span class="s5">Statistics are sourced</span><span class="s2"> in the caption or video description. Do not present third-party statistics as EP Wealth data. The source is added by the marketing team.</span></p>
-<p class="p39"><span class="s2">Truth Drop format</span></p>
-<p class="p30"><span class="s2"></span><br></p>
-<p class="p42"><span class="s5">Your credentials</span><span class="s2"> (CFP®, etc.) are displayed on-screen as a lower-third or in the caption. Both a compliance requirement and a credibility signal.</span></p>
-<p class="p39"><span class="s2">All formats</span></p>
-<p class="p43"><span class="s2"></span><br></p>
-<p class="p6"><span class="s2">11</span></p>
-<p class="p7"><span class="s2">Quick-Reference Card</span></p>
-<p class="p8"><span class="s2">Print this and keep it with the gear kit. Read it before every session.</span></p>
-<p class="p13"><span class="s1">PRE-SESSION CHECKLIST</span></p>
-<p class="p13"><span class="s1">BEFORE YOU FILM</span></p>
-<p class="p44"><span class="s1">□ Mic charged and clipped</span></p>
-<p class="p44"><span class="s1">□ Light on and positioned (eyes bright)</span></p>
-<p class="p44"><span class="s1">□ Background clean, not staged</span></p>
-<p class="p44"><span class="s1">□ Camera at eye level, 2–3 feet away</span></p>
-<p class="p44"><span class="s1">□ Phone set to 4K, Do Not Disturb on</span></p>
-<p class="p44"><span class="s1">□ Warm-up take filmed and discarded</span></p>
-<p class="p44"><span class="s1">□ Scripts in hand</span></p>
-<p class="p13"><span class="s1">WHILE FILMING</span></p>
-<p class="p44"><span class="s1">□ Look at the lens, not yourself</span></p>
-<p class="p44"><span class="s1">□ Start mid-thought, no intro</span></p>
-<p class="p44"><span class="s1">□ Pause before key words</span></p>
-<p class="p44"><span class="s1">□ One idea per video</span></p>
-<p class="p44"><span class="s1">□ Maximum 3 takes per hook</span></p>
-<p class="p44"><span class="s1">□ Let natural imperfections stay</span></p>
-<p class="p13"><span class="s1">AFTER FILMING</span></p>
-<p class="p44"><span class="s1">□ Transfer all footage to the shared Google Drive folder</span></p>
-<p class="p45"><span class="s22">□ Label files clearly: </span><span class="s1">YourName_TopicHook_Take#.mov</span></p>
-<p class="p44"><span class="s1">□ Upload same day — marketing team handles everything from here</span></p>
-<p class="p13"><span class="s1">THE ONE PRINCIPLE</span></p>
-<p class="p46"><span class="s1">Speak to one person like you're telling them something they genuinely need to know. That's it.</span></p>
-<p class="p47"><span class="s1">EP Wealth Advisors — Advisor Content Guide v1.0</span></p>
-<p class="p48"><span class="s1">Questions? Contact the marketing team before your first session.</span></p>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-label">EP Wealth Advisors · Advisor Content Guide</div>
+  <h1>Showing Up<br><em>On Camera</em></h1>
+  <div class="cover-meta">
+    <div class="cover-meta-item"><strong>Version 1.0</strong>For EP Wealth Advisors</div>
+    <div class="cover-meta-item"><strong>Purpose</strong>Short-form video content for paid and organic distribution</div>
+    <div class="cover-meta-item"><strong>Channels</strong>Meta · LinkedIn · Instagram · YouTube Shorts</div>
+  </div>
+</div>
+
+<!-- NAV -->
+<div class="nav-bar">
+  <div class="nav-item">Why This Works</div>
+  <div class="nav-item">Setup & Gear</div>
+  <div class="nav-item">Environment</div>
+  <div class="nav-item">Filming</div>
+  <div class="nav-item">Content Types</div>
+  <div class="nav-item">Delivery</div>
+  <div class="nav-item">Framing Guide</div>
+  <div class="nav-item">Sessions</div>
+  <div class="nav-item">Distribution</div>
+  <div class="nav-item">Metrics</div>
+  <div class="nav-item">Compliance</div>
+</div>
+
+<div class="page">
+
+<!-- 00: WHY -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">00</div>
+    <div>
+      <div class="section-title">Why Advisor-Led Content</div>
+      <div class="section-desc">What this program is, what it asks of you, and what it's designed to do.</div>
+    </div>
+  </div>
+
+  <p>Short-form video featuring EP Wealth advisors speaking directly to camera tends to build trust and generate engagement in ways that other creative often doesn't. The reason is straightforward: people trust people. When a qualified advisor addresses a financial concern clearly and specifically, it carries a credibility that a generic or stock image cannot replicate.</p>
+
+  <p>This guide is designed to make the process as straightforward as possible. You don't need to be a natural on camera. You don't need production experience. You need a phone, decent light, and something real to say. The rest of this guide handles everything else.</p>
+
+  <p><strong>What this asks of you:</strong> Roughly 60 minutes every two to three weeks — a filming session that produces six to eight short videos. The marketing team handles editing, captioning, distribution, and paid amplification. Your job is to show up and speak to what you know.</p>
+
+  <div class="card-grid cols-3" style="margin-top: 28px;">
+    <div class="card">
+      <div class="card-label">What This Is</div>
+      <div class="card-title">Authentic, direct, advisor-led content</div>
+      <div class="card-body">Short videos of EP Wealth advisors speaking directly to specific financial concerns. No studio. No script. The advisor's expertise and presence is the asset.</div>
+    </div>
+    <div class="card">
+      <div class="card-label">What This Is Not</div>
+      <div class="card-title">Polished brand advertising</div>
+      <div class="card-body">This is not a TV commercial or a scripted corporate video. The moment it looks produced and performed, it risks losing the quality that makes it effective.</div>
+    </div>
+    <div class="card">
+      <div class="card-label">What You Get</div>
+      <div class="card-title">Personal brand and attributed leads</div>
+      <div class="card-body">Leads generated through your content are attributed to the content you produce. Your LinkedIn has the potential to grow. EP Wealth covers production support and media spend. Both parties benefit.</div>
+    </div>
+  </div>
+</div>
+
+<!-- 01: GEAR -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">01</div>
+    <div>
+      <div class="section-title">Setup & Gear</div>
+      <div class="section-desc">Everything needed before pressing record. Achievable for under $500 total. No production crew required.</div>
+    </div>
+  </div>
+
+  <div class="card-grid cols-2">
+    <div class="card dark">
+      <div class="card-label">Camera</div>
+      <div class="card-title">iPhone 14+ or any recent flagship</div>
+      <div class="card-body"><strong>Use the back camera, not the front.</strong> The rear camera on any recent iPhone or Android produces significantly better image quality. Film vertically (portrait) for all social formats. If you have an iPhone 14 or newer, that is all the camera you need. Do not purchase a separate camera.</div>
+    </div>
+    <div class="card dark">
+      <div class="card-label">Microphone — Most Important Purchase</div>
+      <div class="card-title">Rode Wireless GO II or DJI Mic 2</div>
+      <div class="card-body"><strong>Audio quality matters just as much as video quality.</strong> Poor audio causes people to stop watching regardless of what is being said. The Rode Wireless GO II (~$299) or DJI Mic 2 (~$199) clip on and connect wirelessly. Either one would greatly enhance the quality of the videos.</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Stabilization</div>
+      <div class="card-title">Tripod — ideal</div>
+      <div class="card-body">The camera must be completely still. An adjustable tripod ($30–60) works for all standard filming setups. The DJI OM 6 gimbal (~$159) is an option if you want to film while moving. For most sessions, a tripod is all you need. Handheld is not ideal but okay in a pinch.</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Lighting</div>
+      <div class="card-title">Natural light first, key light second</div>
+      <div class="card-body">A window with indirect natural light, camera facing the window and you facing the camera, is the best and lowest-cost lighting setup available. For indoor or low-light situations, an Elgato Key Light (~$199) or a basic ring light ($40–80) works well. Avoid overhead fluorescent office lighting on its own.</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <div class="callout-label">Total Investment</div>
+    <p><strong>Minimum (phone + tripod + ring light):</strong> ~$100. <strong>Recommended:</strong> Phone + Rode Wireless GO II + Elgato Key Light + tripod ≈ $500. This is shared equipment — one setup serves every advisor in the program.</p>
+  </div>
+</div>
+
+<!-- 02: ENVIRONMENT -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">02</div>
+    <div>
+      <div class="section-title">Environment & Lighting</div>
+      <div class="section-desc">Where and how the shot is framed. The background sends a signal before you speak a word.</div>
+    </div>
+  </div>
+
+  <div class="card-grid cols-3">
+    <div class="card">
+      <div class="card-label">Option A — Preferred</div>
+      <div class="card-title">Office with natural depth</div>
+      <div class="card-body">Your actual office with bookshelves or a window visible in the background, slightly out of focus. Real environment signals authenticity. Clean but not staged. This is the strongest default setting.</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Option B — Strong</div>
+      <div class="card-title">Plain wall, neutral tone</div>
+      <div class="card-body">A clean cream, white, or dark wall with you in sharp focus and nothing distracting behind. Works well for content where a text overlay will appear on screen. Clean, professional, widely usable.</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Option C — Contextual</div>
+      <div class="card-title">Meeting room or off-site location</div>
+      <div class="card-body">A client meeting space or a clean coffee shop environment. Adds authenticity for more conversational content. Ensure background noise is manageable with the wireless mic.</div>
+    </div>
+  </div>
+
+  <div class="do-dont">
+    <div class="do-box">
+      <div class="do-label">Lighting: Do</div>
+      <div class="do-item">Face a window — natural light front-on is the best available light</div>
+      <div class="do-item">Ensure your eyes are bright — light should create a visible catchlight in the eyes</div>
+      <div class="do-item">Film in morning or late afternoon for warmer natural light</div>
+      <div class="do-item">Position a key light at roughly 45° to your face, slightly above eye level</div>
+      <div class="do-item">Aim for slightly warm color temperature — it reads as more natural on camera</div>
+    </div>
+    <div class="dont-box">
+      <div class="dont-label">Lighting: Don't</div>
+      <div class="dont-item">Film with a window behind you — creates a silhouette</div>
+      <div class="dont-item">Rely only on overhead office fluorescents — creates unflattering shadows</div>
+      <div class="dont-item">Use a ring light centered directly in front — creates a flat look that can undermine authority</div>
+      <div class="dont-item">Mix warm and cool light sources — looks inconsistent on screen</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <div class="callout-label">The 60-Second Light Check</div>
+    <p>Before filming, look at yourself on the phone screen. Are your eyes clearly visible and lit? Is there any strong shadow across one side of your face? Is the background distractingly busy or dark? If eyes are bright and your face is evenly lit, the lighting is good. Don't spend more than 60 seconds on this.</p>
+  </div>
+</div>
+
+<!-- 03: FILMING -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">03</div>
+    <div>
+      <div class="section-title">Filming Technique</div>
+      <div class="section-desc">Frame, distance, eye contact, and format. The technical decisions that separate watchable from skippable.</div>
+    </div>
+  </div>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <div class="card-label">Framing</div>
+      <div class="card-title">Medium close-up. Leave room in the top third for negative space.</div>
+      <div class="card-body">Your frame should show head and chest — not full body, not extreme close-up. Leave the upper third of the frame as negative space — this is used for text overlays and captions. This is the composition that tends to read as authoritative and engaged. See the framing guide in Section 06 for a visual reference.</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Distance</div>
+      <div class="card-title">2–3 feet from camera.</div>
+      <div class="card-body">The camera should be 2–3 feet from your face. This creates conversational intimacy. Anything further reads as a stage presentation. Move the tripod closer rather than zooming in — digital zoom degrades quality. Physical distance is the only variable worth adjusting here.</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Eye Contact</div>
+      <div class="card-title">Look at the lens, not yourself.</div>
+      <div class="card-body">Look directly at the camera lens — not at your own face on the screen. Looking at the screen instead of the lens reads as avoiding eye contact, which can undermine the trust and directness these videos are built around. If it helps, place a small sticker or piece of tape next to the lens as a focus point.</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Format Settings</div>
+      <div class="card-title">4K 30fps. Film vertically.</div>
+      <div class="card-body">Set your iPhone to 4K 30fps in Camera settings before filming. Film everything vertically (portrait orientation). This gives the most flexibility across platforms — vertical content can be reframed for horizontal if needed. Horizontal content cannot be made vertical without significant quality loss.</div>
+    </div>
+  </div>
+</div>
+
+<!-- 04: CONTENT TYPES -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">04</div>
+    <div>
+      <div class="section-title">Content Types</div>
+      <div class="section-desc">The repeatable formats you'll film. Each one has a specific job in the funnel.</div>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Format</th>
+          <th>Structure</th>
+          <th>Length</th>
+          <th>Purpose</th>
+          <th>Channel</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>The Hook Shot</strong></td>
+          <td>Hook → 1 insight → soft close</td>
+          <td>15–45s</td>
+          <td><span class="tag tag-navy">Awareness</span></td>
+          <td>Meta Reels, Instagram, LinkedIn</td>
+        </tr>
+        <tr>
+          <td><strong>The Truth Drop</strong></td>
+          <td>Surprising fact → explanation → implication</td>
+          <td>15–45s</td>
+          <td><span class="tag tag-gold">Consideration</span></td>
+          <td>Meta Feed, LinkedIn, YouTube Shorts</td>
+        </tr>
+        <tr>
+          <td><strong>The Scenario</strong></td>
+          <td>Anonymous client situation → gap → what changes with a plan</td>
+          <td>60–90s</td>
+          <td><span class="tag tag-gold">Consideration</span></td>
+          <td>Meta Feed, LinkedIn</td>
+        </tr>
+        <tr>
+          <td><strong>The Myth Bust</strong></td>
+          <td>"Most people think X. Here's what's actually true."</td>
+          <td>30–60s</td>
+          <td><span class="tag tag-navy">Awareness</span></td>
+          <td>All channels</td>
+        </tr>
+        <tr>
+          <td><strong>The Client Story</strong></td>
+          <td>Anonymous scenario → challenge → outcome</td>
+          <td>60–90s</td>
+          <td><span class="tag tag-green">Trust</span></td>
+          <td>Meta, LinkedIn</td>
+        </tr>
+        <tr>
+          <td><strong>The Assessment Bridge</strong></td>
+          <td>Insight → "here's how we'd look at this specifically" → FHA</td>
+          <td>30–45s</td>
+          <td><span class="tag tag-green">Conversion</span></td>
+          <td>Retargeting only</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <div class="card-label">The Hook Shot — Start Here</div>
+      <div class="card-title">One idea. Under a minute. Ideally around 15s. Stop the scroll.</div>
+      <div class="card-body">
+        <strong>Structure:</strong><br>
+        Seconds 0–3: The hook. No preamble.<br>
+        Seconds 3–30: One supporting insight or scenario.<br>
+        Seconds 30–45: The resolution and CTA — what should the viewer take from this?<br><br>
+        <strong>Example:</strong> "Your RSUs vested last month. The tax hit is already locked in. Did anyone call you before that happened?" [30 seconds explaining why the planning window is before the vest, not after]<br><br>
+        This is the primary format for building awareness and testing which topics resonate.
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-label">The Scenario — Strongest for Trust</div>
+      <div class="card-title">Anonymous client situation as proof of insight.</div>
+      <div class="card-body">
+        <strong>Structure:</strong><br>
+        "I worked with someone recently who…" → describe the situation<br>
+        The gap or decision they were about to make<br>
+        What changed when they had the right plan<br><br>
+        <strong>Critical rule:</strong> Always fully anonymous — no names, no identifying details. The situation is what resonates. The viewer maps their own circumstances onto it.<br><br>
+        <strong>Compliance note:</strong> Frame as illustrative, not as a testimonial. "Here's a situation I've seen" rather than "here's what we achieved for a client."
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-label">The Assessment Bridge — Warm Audiences Only</div>
+      <div class="card-title">A direct invitation to get your numbers run.</div>
+      <div class="card-body">
+        <strong>This format runs to retargeting audiences only — not cold traffic.</strong><br><br>
+        Bridge the insight from earlier content to a specific invitation: "We run an actual analysis of your specific situation — income, assets, tax exposure, timing — and show you what the numbers actually look like. No pitch. No products. Just your numbers."<br><br>
+        This format should generally not be the first thing someone sees from EP Wealth.
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-label">The Truth Drop — Highest Shareability</div>
+      <div class="card-title">A surprising fact, explained plainly.</div>
+      <div class="card-body">
+        <strong>Structure:</strong><br>
+        Open with the surprising stat or fact.<br>
+        Explain why it's true and why most people don't know it.<br>
+        Close with the single most important implication.<br><br>
+        <strong>Example:</strong> "Up to 85% of your Social Security benefit can be subject to federal income tax. Most people find this out at tax time — not before. The window to plan around it is before you start collecting, not after."<br><br>
+        Works across all formats including as a standalone static image with kinetic text.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 05: DELIVERY -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">05</div>
+    <div>
+      <div class="section-title">Delivery & On-Camera Presence</div>
+      <div class="section-desc">How to speak, move, and carry yourself. This is the hardest thing to describe and the most important to get right.</div>
+    </div>
+  </div>
+
+  <p>The most common issue advisors face on camera is performing — shifting into a slightly more formal, more careful version of themselves when they feel the camera. Viewers pick up on this quickly and it tends to register as either uncomfortable or inauthentic. The goal is the opposite: <strong>be less polished, not more.</strong> Speak the way you would to a client you've known for three years, not the way you'd present to a new prospect in a formal setting.</p>
+
+  <div class="step-list">
+    <div class="step-item">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <div class="step-title">Start mid-thought — no intro</div>
+        <div class="step-body">Never open with "Hi, I'm [name] from EP Wealth Advisors." The camera is already rolling when you start speaking. The hook is the first thing out of your mouth. Your name and firm appear in the caption and the end card — they don't need to open the video. Starting mid-thought signals that you have something worth saying immediately.</div>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <div class="step-title">Pause before the key words</div>
+        <div class="step-body">A brief pause before the most important word or phrase in a sentence creates emphasis and gives the viewer time to absorb what's coming. <em>"Most people don't realize their inherited IRA could cost their beneficiaries… forty cents on the dollar."</em> The pause builds anticipation and prevents the rushed cadence that makes delivery sound scripted. It also slows the pace in a way that works well on camera.</div>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <div class="step-title">Speak to one person, not an audience</div>
+        <div class="step-body">Imagine you're telling one specific person — a current client you know well — something they need to hear over coffee. Not presenting to a room, not recording for posterity. The conversational intimacy of speaking to one person is what tends to make these videos feel real and direct. If it sounds like a keynote, that's a signal to reset.</div>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <div class="step-title">Let the natural imperfections stay</div>
+        <div class="step-body">Small pauses, a natural sentence restart, an "uh" — these often register as features, not flaws. They signal that this is genuine and unrehearsed, which is part of what makes it worth watching. Reshoot if you lose the thread entirely, if external noise interrupts, or if the delivery is so stilted it reads as uncomfortable. Otherwise, the first take that feels real is usually the one to keep. Many times, the best thing to do is keep talking, even if you stumble — we can often edit those moments out, especially if you record the same script several times.</div>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <div class="step-title">Physical presence: engaged but still</div>
+        <div class="step-body">Minimal swaying, pacing, or fidgeting — the camera amplifies movement significantly. Natural hand gestures while speaking are fine and can add energy. Lean slightly forward toward the camera — it reads as engaged and confident. Leaning back reads as detached. Keep your head level; chin slightly down rather than up.</div>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">6</div>
+      <div class="step-content">
+        <div class="step-title">Warm up before filming</div>
+        <div class="step-body">Do not film cold. Have a brief conversation about anything before the camera rolls — the goal is to get into natural conversational mode before you start. Alternatively, film a 60-second throwaway take on something off-topic just to break any camera anxiety. The first real take after a warm-up is almost always better than the first cold take.</div>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">7</div>
+      <div class="step-content">
+        <div class="step-title">End cleanly — no pitch</div>
+        <div class="step-body">Stop after your final point lands. Don't add "so if you're interested, give us a call" or any version of a sales close. The marketing team adds an end card with relevant next steps. Your job is to land the idea. The call to action is handled separately. Videos that end cleanly tend to perform better than those that trail into a pitch.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="do-dont">
+    <div class="do-box">
+      <div class="do-label">Delivery: Do</div>
+      <div class="do-item">Start with the hook immediately — no preamble</div>
+      <div class="do-item">Use natural pauses before key words</div>
+      <div class="do-item">Speak slightly slower than your normal pace</div>
+      <div class="do-item">Use specific numbers and scenarios — specificity signals credibility</div>
+      <div class="do-item">Cover one idea per video</div>
+      <div class="do-item">End after the point lands</div>
+    </div>
+    <div class="dont-box">
+      <div class="dont-label">Delivery: Don't</div>
+      <div class="dont-item">Introduce yourself at the start</div>
+      <div class="dont-item">Try to cover multiple ideas in one video</div>
+      <div class="dont-item">Film more than 90 seconds for a single concept</div>
+      <div class="dont-item">Do more than 3 takes per hook — the first real take is usually best</div>
+    </div>
+  </div>
+</div>
+
+<!-- 06: FRAMING GUIDE -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">06</div>
+    <div>
+      <div class="section-title">The 9:16 Framing Guide</div>
+      <div class="section-desc">How to position yourself within the vertical frame so that text overlays, captions, and your face all have the right space.</div>
+    </div>
+  </div>
+
+  <p>All content is filmed in 9:16 (portrait) format. This is the native format for Meta Reels, Instagram Stories, LinkedIn video, and YouTube Shorts. The frame is divided into three horizontal zones using the rule of thirds. Understanding how these zones work determines where you position yourself and where text hooks and captions will be placed in post.</p>
+
+  <div class="mockup-section">
+
+    <!-- PHONE MOCKUP -->
+    <div class="phone-outer">
+      <div class="phone-shell">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <div class="screen-bg"></div>
+
+          <!-- Rule of thirds grid -->
+          <div class="thirds-grid">
+            <div class="third-row"></div>
+            <div class="third-row"></div>
+            <div class="third-row"></div>
+          </div>
+
+          <!-- Text hook zone label -->
+          <div class="zone-top">
+            <div class="zone-label text-zone">Text Hook Zone</div>
+          </div>
+
+          <!-- Advisor face zone -->
+          <div class="zone-mid">
+            <div class="zone-label face-zone">Eyes Here</div>
+          </div>
+
+          <!-- Body / caption zone -->
+          <div class="zone-bot">
+            <div class="zone-label body-zone">Chest / Shoulders</div>
+          </div>
+
+          <!-- Text hook mockup -->
+          <div class="hook-text-mockup">
+            <span class="hook-line">85% of your</span>
+            <span class="hook-line">Social Security</span>
+            <span class="hook-line gold">can still be taxed.</span>
+          </div>
+
+          <!-- Caption bar -->
+          <div class="caption-bar">
+            <div class="caption-text">Most people find this out at tax time — not before the window to plan closes.</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ANNOTATION NOTES -->
+    <div class="mockup-notes">
+
+      <div style="margin-bottom: 20px;">
+        <div class="zone-band gold-band">
+          <div class="zone-band-label">Top Third — Text Hook Zone</div>
+        </div>
+        <div class="zone-band-desc" style="font-size:13px; color: var(--muted); font-weight:300; padding: 0 2px;">
+          Leave the top third as negative space. This is where the marketing team places the text hook overlay — the large, bold opening line that stops the scroll for viewers watching on mute. If you crowd this area with your face or body, the text overlay becomes unreadable. Position yourself so this zone stays clear.
+        </div>
+      </div>
+
+      <div style="margin-bottom: 20px;">
+        <div class="zone-band mid-band">
+          <div class="zone-band-label">Middle Third — Your Eyes</div>
+        </div>
+        <div class="zone-band-desc" style="font-size:13px; color: var(--muted); font-weight:300; padding: 0 2px;">
+          Your eyes should land in the middle third — ideally near the upper intersection of the rule of thirds grid. This is the compositional sweet spot that reads as authoritative and engaged without appearing to crowd the frame. Adjust your tripod height until this is achieved before filming.
+        </div>
+      </div>
+
+      <div style="margin-bottom: 20px;">
+        <div class="zone-band low-band">
+          <div class="zone-band-label">Bottom Third — Chest, Shoulders, Captions</div>
+        </div>
+        <div class="zone-band-desc" style="font-size:13px; color: var(--muted); font-weight:300; padding: 0 2px;">
+          Your chest and shoulders occupy the lower third. The marketing team places closed captions here. Avoid busy patterns or bright graphics on clothing in this area — they compete visually with caption text. Solid colors or subtle textures work best.
+        </div>
+      </div>
+
+      <div class="callout" style="margin-top: 8px;">
+        <div class="callout-label">Quick Setup Check</div>
+        <p>Before filming, hold your phone up and look at the live view. Are your eyes sitting in the middle third of the frame? Is there clear space above your head in the top third? If yes, the framing is correct. If your eyes are in the center of the frame, raise the tripod or step back slightly.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- 07: PRODUCTION SESSION -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">07</div>
+    <div>
+      <div class="section-title">The Filming Session</div>
+      <div class="section-desc">How to run a session efficiently. The goal is 6–8 usable videos in 90 minutes.</div>
+    </div>
+  </div>
+
+  <div class="phase-banner">
+    <div class="phase-label">Session Cadence</div>
+    <div class="phase-text"><strong>Once every 2–3 weeks.</strong> Each 60-minute session produces 6–8 videos that are edited, captioned, and released across 2–3 weeks. This cadence maintains content freshness without requiring significant ongoing time.</div>
+  </div>
+
+  <div class="step-list">
+    <div class="step-item">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <div class="step-title">Pre-Session Brief (sent 48 hours before)</div>
+        <div class="step-body">The marketing team sends a brief with 8–10 hook options 48 hours before each session. You select 6 that genuinely resonate with you — the constraint matters. Hooks you find hollow or inauthentic will show on camera. You can also bring 1–2 of your own based on recent client conversations. Those often produce the strongest content. Any advisor-originated hooks will need to be approved by Compliance before being used in market.</div>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <div class="step-title">Day-Of Setup (15 minutes)</div>
+        <div class="step-body">Set up the tripod at correct height (lens at your eye level). Run the light check — 60 seconds maximum. Attach the wireless mic. Clean the camera lens with a cloth. Film one 30-second warm-up take on anything at all — this is discarded, it just breaks the camera anxiety. These 15 minutes prevent an hour of reshoots later.</div>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <div class="step-title">Film Hook Shots First</div>
+        <div class="step-body">Film the 2–3 most direct or challenging hooks first, while your energy is highest. Try avoiding reading directly off the script if possible. Give each hook a maximum of 3 takes. The first take that feels real is usually the right one. If a hook isn't working after 3 takes, move on and return to it later. Forcing it produces exactly the kind of stiff delivery you're trying to avoid.</div>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <div class="step-title">Reset Between Takes</div>
+        <div class="step-body">Take 30–60 seconds between hooks to break the state — a brief conversation, a drink of water, a physical shake-out. The camera accumulates tension over time. Regular resets prevent the cumulative stiffening that makes the last few videos of a session noticeably worse than the first.</div>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <div class="step-title">End with Conversational Content</div>
+        <div class="step-body">Close the session with Scenario or Truth Drop formats — more conversational, lower pressure than direct hook shots. By this point the camera anxiety has usually dropped and the looser delivery shows. Some of the most natural content often comes in the final 20 minutes of a session.</div>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">6</div>
+      <div class="step-content">
+        <div class="step-title">Transfer Footage to Shared Drive</div>
+        <div class="step-body">After the session, AirDrop or USB transfer all footage to the shared Google Drive folder provided by the marketing team. Label each file clearly with the hook concept: <code>Advisor_RSUhook_take2.mov</code>. Upload the same day while the session is fresh. The marketing team handles everything from this point forward.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 08: DISTRIBUTION -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">08</div>
+    <div>
+      <div class="section-title">Where Your Content Goes</div>
+      <div class="section-desc">How videos are distributed across platforms and how your personal channels fit into the program.</div>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Channel</th>
+          <th>Account</th>
+          <th>Content Type</th>
+          <th>Frequency</th>
+          <th>Paid?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Meta (Facebook + Instagram)</strong></td>
+          <td>EP Wealth brand page</td>
+          <td>All formats</td>
+          <td>3–4x per week</td>
+          <td><span class="tag tag-green">Yes — primary paid channel</span></td>
+        </tr>
+        <tr>
+          <td><strong>LinkedIn (Company)</strong></td>
+          <td>EP Wealth company page</td>
+          <td>Truth Drop, Scenario, Myth Bust</td>
+          <td>2–3x per week</td>
+          <td><span class="tag tag-gold">Yes — exec and HNW targeting</span></td>
+        </tr>
+        <tr>
+          <td><strong>LinkedIn (Your Profile)</strong></td>
+          <td>Your personal LinkedIn</td>
+          <td>All formats — more personal captions</td>
+          <td>2x per week</td>
+          <td><span class="tag tag-navy">Organic — builds your brand</span></td>
+        </tr>
+        <tr>
+          <td><strong>Instagram (Your Profile)</strong></td>
+          <td>Your personal account (optional)</td>
+          <td>Hook Shots, Truth Drops</td>
+          <td>2–3x per week</td>
+          <td><span class="tag tag-navy">Organic only</span></td>
+        </tr>
+        <tr>
+          <td><strong>YouTube Shorts</strong></td>
+          <td>EP Wealth YouTube channel</td>
+          <td>All formats repurposed</td>
+          <td>2–3x per week</td>
+          <td><span class="tag tag-navy">Organic — search value over time</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout">
+    <div class="callout-label">Your Personal LinkedIn</div>
+    <p>Content posted to your personal LinkedIn uses slightly more conversational captions — written in your voice, in first person. This is where your personal brand builds over time. Followers you accumulate there are yours. The marketing team provides caption suggestions for each video but you can adapt them to match how you naturally write.</p>
+  </div>
+
+  <div class="card-grid cols-3" style="margin-top: 24px;">
+    <div class="card subtle">
+      <div class="card-label">Day 0</div>
+      <div class="card-title">Published organically</div>
+      <div class="card-body">All edited videos go live across channels organically first. Platform-specific captions are written for each — not the same copy across platforms.</div>
+    </div>
+    <div class="card subtle">
+      <div class="card-label">Days 1–3</div>
+      <div class="card-title">Organic performance monitored</div>
+      <div class="card-body">The marketing team watches early engagement data — watch time, view rate, comments, shares. This determines which videos get paid amplification.</div>
+    </div>
+    <div class="card subtle">
+      <div class="card-label">Day 3+</div>
+      <div class="card-title">Best performers boosted</div>
+      <div class="card-body">The video with the strongest organic signal gets promoted as a paid dark post. Budget is applied only to content that has already shown it resonates.</div>
+    </div>
+  </div>
+</div>
+
+<!-- 09: METRICS -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">09</div>
+    <div>
+      <div class="section-title">What We Measure</div>
+      <div class="section-desc">The signals that indicate content is working. Shared with you after each session's videos are in market.</div>
+    </div>
+  </div>
+
+  <p>The marketing team tracks performance for every video and shares a brief summary with you after each content cycle. You don't need to monitor this yourself — but understanding what the numbers mean helps you refine your delivery and hook selection over time.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>What It Means</th>
+          <th>Target</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Hook Rate</strong></td>
+          <td>% of people who watched at least 3 seconds. Measures whether the opening hook stopped the scroll.</td>
+          <td>25%+</td>
+        </tr>
+        <tr>
+          <td><strong>Hold Rate</strong></td>
+          <td>% of 3-second viewers who kept watching to 15 seconds. Measures whether the content after the hook held attention.</td>
+          <td>40%+</td>
+        </tr>
+        <tr>
+          <td><strong>Watch-Through</strong></td>
+          <td>% who watched at least 50% of the video. Indicates depth of resonance.</td>
+          <td>35%+</td>
+        </tr>
+        <tr>
+          <td><strong>Comments</strong></td>
+          <td>Qualitative signal — what people say tells you whether the content hit a nerve. Even critical comments indicate resonance.</td>
+          <td>Any engagement is a signal</td>
+        </tr>
+        <tr>
+          <td><strong>Saves / Shares</strong></td>
+          <td>People saving or forwarding the video indicates they found it genuinely useful. Strong organic signal.</td>
+          <td>Higher than baseline</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout">
+    <div class="callout-label">What the Data Is Used For</div>
+    <p>Performance data feeds directly into your next session brief. If a specific hook angle or topic performs well, the marketing team builds more hooks around it. If something consistently underperforms, it gets retired. Over time, this means the content you're filming gets progressively better-calibrated to what your audience actually responds to.</p>
+  </div>
+</div>
+
+<!-- 10: COMPLIANCE -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">10</div>
+    <div>
+      <div class="section-title">Compliance Guidelines</div>
+      <div class="section-desc">What you can film without case-by-case review, and what requires sign-off before publishing.</div>
+    </div>
+  </div>
+
+  <p>The compliance framework for this program is built around a pre-approved content library rather than reviewing each video individually. Hooks and topics within the approved scripts can be filmed and published without additional review. Content outside those categories goes through the standard compliance process before going live.</p>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <div class="card-label">Pre-Approved — Film Without Individual Review</div>
+      <div class="card-title">Educational content within these categories</div>
+      <div class="card-body">
+        • Explanation of financial concepts (RMDs, Roth conversions, fiduciary duty, Social Security timing)<br><br>
+        • Industry statistics from cited, verifiable sources (sourced in caption)<br><br>
+        • Anonymous client scenarios framed as illustrative<br><br>
+        • General planning principles and frameworks<br><br>
+        • EP Wealth firm facts (fee-only status, fiduciary obligation)<br><br>
+        <strong>Rule of thumb:</strong> If you would say it in a public educational seminar, it can be filmed under pre-approval.
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-label">Requires Compliance Review Before Publishing</div>
+      <div class="card-title">These categories need sign-off first</div>
+      <div class="card-body">
+        • Any specific performance claims or return references<br><br>
+        • Named or identifiable client scenarios<br><br>
+        • Direct comparisons to named competitors<br><br>
+        • Specific tax advice ("you should do X") rather than general planning principles<br><br>
+        • Any content that could be interpreted as guaranteeing an outcome<br><br>
+        <strong>Standard:</strong> Educational and informational = pre-approved. Specific claims or advice = review required.
+      </div>
+    </div>
+  </div>
+
+  <div class="checklist">
+    <div class="check-item">
+      <div class="check-box"></div>
+      <div class="check-text"><strong>Disclaimer language</strong> is added by the marketing team to all published content and is provided by Compliance.</div>
+      <div class="check-tag">Always added</div>
+    </div>
+    <div class="check-item">
+      <div class="check-box"></div>
+      <div class="check-text"><strong>Scenario content</strong> is labeled as illustrative: "This is a hypothetical scenario for illustrative purposes" — added in the caption by the marketing team.</div>
+      <div class="check-tag">Scenario format</div>
+    </div>
+    <div class="check-item">
+      <div class="check-box"></div>
+      <div class="check-text"><strong>Statistics are sourced</strong> in the caption or video description. Do not present third-party statistics as EP Wealth data. The source is added by the marketing team.</div>
+      <div class="check-tag">Truth Drop format</div>
+    </div>
+    <div class="check-item">
+      <div class="check-box"></div>
+      <div class="check-text"><strong>Your credentials</strong> (CFP®, etc.) are displayed on-screen as a lower-third or in the caption. Both a compliance requirement and a credibility signal.</div>
+      <div class="check-tag">All formats</div>
+    </div>
+    <div class="check-item">
+      <div class="check-box"></div>
+      <div class="check-text"><strong>All published content is archived</strong> per FINRA/SEC recordkeeping requirements. The marketing team maintains this record — you don't need to do anything separately.</div>
+      <div class="check-tag">Record-keeping</div>
+    </div>
+  </div>
+</div>
+
+<!-- QUICK REF -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">11</div>
+    <div>
+      <div class="section-title">Quick-Reference Card</div>
+      <div class="section-desc">Print this and keep it with the gear kit. Read it before every session.</div>
+    </div>
+  </div>
+
+  <div class="card dark" style="padding: 32px;">
+    <div class="card-label">Pre-Session Checklist</div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 16px;">
+      <div>
+        <div style="font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-lt); margin-bottom: 12px;">Before You Film</div>
+        <div style="font-size: 13px; color: rgba(255,255,255,0.7); line-height: 1.9; font-weight: 300;">
+          □ Mic charged and clipped<br>
+          □ Light on and positioned (eyes bright)<br>
+          □ Background clean, not staged<br>
+          □ Camera at eye level, 2–3 feet away<br>
+          □ Phone set to 4K, Do Not Disturb on<br>
+          □ Warm-up take filmed and discarded<br>
+          □ Scripts in hand
+        </div>
+      </div>
+      <div>
+        <div style="font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-lt); margin-bottom: 12px;">While Filming</div>
+        <div style="font-size: 13px; color: rgba(255,255,255,0.7); line-height: 1.9; font-weight: 300;">
+          □ Look at the lens, not yourself<br>
+          □ Start mid-thought, no intro<br>
+          □ Pause before key words<br>
+          □ One idea per video<br>
+          □ Maximum 3 takes per hook<br>
+          □ Let natural imperfections stay
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+      <div style="font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-lt); margin-bottom: 12px;">After Filming</div>
+      <div style="font-size: 13px; color: rgba(255,255,255,0.7); line-height: 1.7; font-weight: 300;">
+        □ Transfer all footage to the shared Google Drive folder<br>
+        □ Label files clearly: <span style="font-family: 'DM Mono', monospace; font-size: 11px; color: var(--gold-lt);">YourName_TopicHook_Take#.mov</span><br>
+        □ Upload same day — marketing team handles everything from here
+      </div>
+    </div>
+    <div style="margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+      <div style="font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-lt); margin-bottom: 10px;">The One Principle</div>
+      <div style="font-family: 'Instrument Serif', serif; font-size: 17px; color: var(--white); font-style: italic; line-height: 1.45;">Speak to one person like you're telling them something they genuinely need to know. That's it.</div>
+    </div>
+  </div>
+</div>
+
+</div><!-- /page -->
+
+<div class="footer">
+  <div class="footer-brand">EP Wealth Advisors — Advisor Content Guide v1.0</div>
+  <div class="footer-note">Questions? Contact the marketing team before your first session.</div>
+</div>
+
 </body>
 </html>
